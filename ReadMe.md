@@ -60,3 +60,6 @@ Linux or MacOS
 $ ./mvnw test
 ```
 
+
+[![Terminal Output](https://img.youtube.com/vi/NDtPZc1wx_M/2.jpg)](https://www.youtube.com/watch?v=NDtPZc1wx_M)
+
