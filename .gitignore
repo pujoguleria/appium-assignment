@@ -1,0 +1,9 @@
+*.iml
+.idea
+.settings
+target/
+test-output/
+.DS_Store
+__MACOSX
+*.png
+*.html
