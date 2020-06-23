@@ -31,7 +31,7 @@ $ echo $ANDROID_HOME
 ```
 2. Create and launch an AVD
 
-Go to AVD manager in Android Studio. Create a AVD with image targetting `x86-64` and platform version `9.0+`.  
+Go to AVD manager in Android Studio. Create a AVD with image targetting `x86-64` and platform version `10.0+`.  
 Using other platform won't work because attached Amazon application targets specifically `x86-64`. Download the image if necessary. Launch the AVD when configured. First time it can take a few minutes.
 
 3. Download and extract Assignment.zip somwhere. 
@@ -59,4 +59,7 @@ Linux or MacOS
 ```console
 $ ./mvnw test
 ```
+
+
+[![Terminal Output](https://img.youtube.com/vi/NDtPZc1wx_M/2.jpg)](https://www.youtube.com/watch?v=NDtPZc1wx_M)
 
