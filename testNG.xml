@@ -3,11 +3,11 @@
 
 <suite name="Suite">
 <listeners>
-<listener class-name="resources.TestListener"/>
-<listener class-name="resources.ExtentReporterNG"/>
+<listener class-name="com.rbc.tests.TestListener"/>
+<listener class-name="com.rbc.tests.ExtentReporterNG"/>
 
 </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="1" name="Test">
     <classes>
       <class name="com.rbc.tests.AmazonKindleAvailabilityTests"/>
     </classes>

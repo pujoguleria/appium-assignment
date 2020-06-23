@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import com.rbc.tests.ui.AppUIControls;
@@ -25,11 +26,12 @@ public class AmazonKindleAvailabilityTests {
 
     @BeforeClass
     public void setUp() throws IOException {
-        logger.info("Initializing tests...");
+        logger.info("Setup. Initializing tests...");
         TestConfiguration testConfiguration = TestConfiguration.getInstance();
         this.driver = testConfiguration.getDriver();
     }
 
+    @AfterClass
     public void tearDown() throws IOException {
         logger.info("Tear down...");
         TestConfiguration.getInstance().getDriver().quit();
@@ -110,7 +112,7 @@ public class AmazonKindleAvailabilityTests {
                     .release().perform();
 
             availabilityText = appUIControls.getStockAvailabilityText().getText();
-            logger.info("Available text {}", availabilityText);
+            logger.info("Available text '{}'", availabilityText);
         }catch (Exception ex){
             logger.info("'Add to Cart' button not found, might be out of stock");
         }

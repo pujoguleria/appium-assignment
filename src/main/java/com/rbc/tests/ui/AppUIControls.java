@@ -20,7 +20,7 @@ public class AppUIControls {
 	@AndroidFindBy(id ="com.amazon.mShop.android.shopping:id/skip_sign_in_button")
 	private AndroidElement signInButton;
 
-	@AndroidFindBy(xpath = "//android.view.View[contains(@text,'CDN$')]")
+	@AndroidFindBy(xpath = "//android.view.View[contains(@text,'price')]")
 	private AndroidElement eReadersListFirstItem;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[contains(@text, 'In Stock')]")

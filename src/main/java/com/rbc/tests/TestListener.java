@@ -1,4 +1,4 @@
-package resources;
+package com.rbc.tests;
 
 import java.io.IOException;
 
@@ -21,7 +21,7 @@ public class TestListener implements ITestListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		logger.info("onTestStart");
+		logger.info("Listener onTestStart");
 		try {
 			TestConfiguration config = TestConfiguration.getInstance();
 			this.driver = config.getDriver();
